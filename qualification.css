@@ -1,0 +1,106 @@
+/* Reset some default styles to ensure consistency across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Apply a background color and set a font for the entire page */
+  body {
+    background-color: slategray;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the header with a background color, centered text, and a border */
+  header {
+    background-color: blue;
+    color: black;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #e74c3c;
+    
+  }
+  nav ul li a:hover {
+    color: #e74c3c; /* Change to your desired hover color */
+  }
+  
+  /* Style the navigation menu with a horizontal list */
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Style the main content container */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Style the qualifications section */
+  .qualification-list {
+    list-style-type: none;
+    margin: 20px;
+  }
+  
+  .qualification {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color:lavender;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Style the contact section */
+  #contact {
+    background-color:black;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .contact-info {
+    margin-bottom: 10px;
+  }
+  
+  .contact-info a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  /* Define responsive styles for different screen sizes */
+  @media screen and (max-width: 768px) {
+    /* Adjust header and navigation for smaller screens */
+    header {
+      padding: 10px 0;
+    }
+  
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+  
+    /* Adjust the main content container for smaller screens */
+    .container {
+      padding: 10px;
+    }
+  }
+  
+  /* Additional styles for larger screens if needed */
+  @media screen and (min-width: 1200px) {
+    /* Example: Increase font size for larger screens */
+    body {
+      font-size: 18px;
+    }
+  }
+  

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Stack Software Engineering Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <script>
+        // Function to add the 'animated' class after a delay
+        function revealElements() {
+            setTimeout(function () {
+                document.getElementById("name").classList.add("animated");
+                document.getElementById("title").classList.add("animated");
+            }, 2000); // Delay in milliseconds (2 seconds in this example)
+        }
+    
+        // Call the function to trigger the animation
+        window.onload = revealElements;
+
+    
+    </script>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="qualifications.html">Qualifications</a></li>
+                <li><a href="projects.html">Projects</a></li>
+               
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <img src="Photo copy.jpg" alt="Your Profile Picture" width="200">
+        <h1 id="name" class="hidden">Hello, My name is Hanamagouda Goudar</h1>
+        <h2 id="title" class="hidden" style="color: slateblue;">I'm a Full Stack Software Developer currently seeking opportunities to enhance my skills.</h2>
+        <p>Highly skilled and certified Java Full Stack Developer with expertise in front-end and back-end technologies. Proficient in Java, JavaScript, HTML/CSS, and frameworks like SpringBoot, Hibernate, Angular. A strong collaborator, delivering high-quality solutions within deadlines. Dedicated to staying updated with emerging tech for innovative user experiences.</p>
+        
+        <section id="resume">
+            <h2>My Resume</h2>
+            <p>You can download my resume <span id="resume-link"><a style="color: blueviolet;font-weight: bolder;" href="hanamagouda.goudar.pdf" target="_blank">Resume</a></span>.</p>
+        </section>
+    </section>
+
+    <footer style="color: black;">
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p class="contact-info">
+                <i class="fas fa-user"></i> Name: Hanamagouda Goudar
+            </p>
+            <p class="contact-info">
+                <i class="fas fa-envelope"></i> Email: <a href="mailto:hmgoudar.11@gmail.com">hmgoudar.11@gmail.com</a>
+            </p>
+            <p class="contact-info">
+                <i class="fas fa-phone"></i> Phone: 7676288611
+            </p>
+            <p class="contact-info">
+                <i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/hanamagouda-goudar-a777981ba/" target="_blank">LinkedIn Profile</a>
+            </p>
+            <p class="contact-info">
+                <i class="fab fa-github"></i> GitHub: <a href="https://github.com/Hanamagouda" target="_blank">GitHub Profile</a>
+            </p>
+        </section>
+    </footer>
+</body>
+</html>

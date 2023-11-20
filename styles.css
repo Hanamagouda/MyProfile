@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: gold;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #333;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #007BFF; /* Background color for the header */
+    color: #fff; /* Text color for the header */
+    padding: 5px 0; /* Padding at the top and bottom of the header */
+    text-align: center; /* Center-align the header content */
+    position: fixed; /* Fix the header at the top of the viewport */
+    width: 100%; /* Make the header full-width */
+    top: 0; /* Place the header at the top of the viewport */
+    z-index: 100; /* Ensure the header appears above other content */
+}
+
+header a {
+    color: #fff; /* Text color for header links */
+    text-decoration: none; /* Remove underlines from header links */
+    margin: 0 15px; /* Add spacing between header links */
+    font-size: 18px; /* Font size for header links */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+header a:hover {
+    color: #f8f9fa; /* Text color for header links on hover */
+}
+
+header ul {
+    list-style: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding from the list */
+    display: flex; /* Use flex layout for horizontal navigation */
+    justify-content: center; /* Center-align navigation items horizontally */
+}
+
+header li {
+    margin: 0; /* Reset margin for list items */
+}
+
+/* Responsive Navigation */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 0; /* Reduce padding for smaller screens */
+    }
+
+    header ul {
+        flex-direction: column; /* Stack navigation items vertically for smaller screens */
+        align-items: center; /* Center-align navigation items vertically */
+    }
+
+    header a {
+        margin: 10px 0; /* Add spacing between navigation items for smaller screens */
+    }
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+section#home {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    text-align: center;
+    margin-top: 100px; /* Add top margin to push content below the header */
+}
+
+section#home img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+section#home p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+section#resume a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+section#resume a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1c75e3fc;
+    color: wheat;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer .contact-info {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* Animated class to reveal elements */
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Keyframes for the pop animation */
+@keyframes pop {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+#title {
+    animation: pop 2s infinite alternate;
+    color: slateblue;
+}
+
+/* Apply the animation to the resume link */
+#resume-link {
+    display: inline-block;
+    animation: pop 2s infinite alternate;
+    color: blueviolet;
+    font-weight: bolder;
+}

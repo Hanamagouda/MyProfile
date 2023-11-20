@@ -1,0 +1,125 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a background color and set font styles */
+  body {
+    background-color:aqua;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Style the header */
+  header {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 0;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  /* Apply a different background color on hover */
+  header:hover {
+    background-color: #0056b3; /* Change the background color on hover */
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+  
+  nav li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  /* Style the navigation links */
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Add a smooth transition effect for color changes */
+  }
+  
+  /* Change the color of navigation links on hover */
+  nav a:hover {
+    color: #FF5733; /* Change to the desired hover color */
+  }
+  
+  /* Style the main content */
+  .container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-top: 20px;
+  }
+  
+  .project {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Increased the shadow size slightly */
+    margin-right: 20px;
+  }
+  
+  /* Add colorful background styles for individual projects */
+  .project:nth-child(odd) {
+    background-color:papayawhip; /* Orange */
+  }
+  
+  /* Add responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    header {
+      text-align: center;
+    }
+  
+    nav ul {
+      text-align: center;
+    }
+  
+    nav li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .project {
+      padding: 10px;
+    }
+  }
+  
+  /* Add more media queries for other screen sizes as needed */
+  
+  /* Base footer styles */
+  footer {
+    background-color: black;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  footer a {
+    color: blue;
+    text-decoration: none;
+  }
+  
+  /* Responsive footer styles for smaller screens */
+  @media screen and (max-width: 768px) {
+    footer {
+      padding: 10px 0;
+    }
+  }
+  
+  /* Additional responsive styles for even smaller screens */
+  @media screen and (max-width: 480px) {
+    footer {
+      padding: 5px 0;
+    }
+  }
