@@ -1,68 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Full Stack Software Engineering Portfolio</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Hanamagouda Goudar | Full Stack Software Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #e3f2fd 0%, #fff 100%);
+            margin: 0;
+            padding: 0;
+            color: #222;
+        }
+        header {
+            background: #007BFF;
+            color: #fff;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 18px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ffd700;
+        }
+        main {
+            max-width: 900px;
+            margin: 2.5rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+        }
+        .profile-img {
+            width: 160px;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 1.5rem auto;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.3rem;
+            margin-bottom: 0.5rem;
+        }
+        h2 {
+            color: #007BFF;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        .summary {
+            font-size: 1.15rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .experience, .projects, .education, .skills {
+            margin-bottom: 2.5rem;
+        }
+        .job-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .company {
+            color: #007BFF;
+            font-weight: 600;
+        }
+        .duration {
+            color: #888;
+            font-size: 0.98rem;
+        }
+        ul {
+            margin: 0.5rem 0 0 1.5rem;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+        .skill-badge {
+            background: #f1f1f1;
+            color: #007BFF;
+            border-radius: 16px;
+            padding: 0.4rem 1rem;
+            font-size: 1rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .resume-link {
+            display: inline-block;
+            margin: 1.5rem auto 0 auto;
+            padding: 0.7rem 2rem;
+            background: #007BFF;
+            color: #fff;
+            border-radius: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            transition: background 0.2s;
+        }
+        .resume-link:hover {
+            background: #0056b3;
+        }
+        .contact-info {
+            text-align: center;
+            margin-top: 2rem;
+        }
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .contact-info i {
+            margin-right: 8px;
+        }
+        footer {
+            background: #2c3e50;
+            color: wheat;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+        @media (max-width: 600px) {
+            main {
+                padding: 1rem;
+            }
+            .skills-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
+        <h1>Hanamagouda Goudar</h1>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="qualifications.html">Qualifications</a></li>
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
+            <a href="#about">About</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+            <a href="Hanamagouda.goudar.resume.pdf" target="_blank">Resume</a>
         </nav>
     </header>
-
     <main>
-        <section id="home">
-            <img src="Photo copy.jpg" alt="Your Profile Picture" width="200">
-            <h1 id="name" class="hidden">Hello, My name is Hanamagouda Goudar</h1>
-            <h2 id="title" class="hidden" style="color: slateblue;">I'm a Full Stack Software Developer currently seeking opportunities to enhance my skills.</h2>
-            <p>Highly skilled and certified Full Stack Developer with expertise in front-end and back-end technologies. Proficient in Java, JavaScript, HTML/CSS, and frameworks like SpringBoot, Hibernate, Angular, Node.js, and React. A strong collaborator, delivering high-quality solutions within deadlines. Dedicated to staying updated with emerging tech for innovative user experiences.</p>
-            
-            <section id="resume">
-                <h2>My Resume</h2>
-                <p>You can download my resume <span id="resume-link"><a href="hanamagouda.goudar.pdf" target="_blank">here</a></span>.</p>
-            </section>
+        <img src="Photo copy.jpg" alt="Hanamagouda Goudar" class="profile-img"/>
+        <section id="about">
+            <div class="summary">
+                <strong>Full Stack Software Developer</strong> with 1.4+ years of experience building scalable, business-focused applications.<br>
+                Currently at <span class="company">Tata Consumer Products Limited</span> (via Mynd Solutions), Bangalore.<br>
+                Passionate about delivering robust solutions using <b>React, Node.js, PostgreSQL, AWS</b> and more.
+            </div>
+        </section>
+        <section id="experience" class="experience">
+            <h2>Professional Experience</h2>
+            <div>
+                <span class="job-title">Full Stack Software Developer</span> <span class="company">@ Tata Consumer Products Limited</span> <span class="duration">(Apr 2023 – Present)</span>
+                <ul>
+                    <li>Developed and maintained scalable modules for <b>tea procurement, packing material cost modeling, and payment processing</b>.</li>
+                    <li>Built proof-of-concepts (POCs) including call recordings and capital fund requests.</li>
+                    <li>Integrated FX logic and audit-ready reporting for international procurement.</li>
+                    <li>Proactively improved software performance and reduced downtime by identifying bugs before deployment.</li>
+                    <li>Collaborated with cross-functional teams to deliver business-critical features on time.</li>
+                </ul>
+                <div style="margin-top:0.5rem;">
+                    <b>Tech Stack:</b> React, Node.js, PostgreSQL, MySQL, AWS, Postman, Swagger, JavaScript
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="projects">
+            <h2>Key Projects</h2>
+            <ul>
+                <li>
+                    <b>Tea Procurement System:</b> Built full-stack features for offer creation, invoice processing, and procurement lifecycle. Integrated payment gateway and FX logic for international modules.
+                </li>
+                <li>
+                    <b>Packing Material Cost Modeling:</b> Designed logic for managing cost models of materials used in packaging various SKUs.
+                </li>
+                <li>
+                    <b>Foodie App:</b> Online food ordering app with location-based discovery and cart-based ordering. <i>Angular, Spring Boot, JWT, MySQL, MongoDB</i>.
+                </li>
+                <li>
+                    <b>Pizza App:</b> Solo project for ordering pizzas with login/cart features. <i>Angular, Spring Boot, JWT</i>.
+                </li>
+                <li>
+                    <b>Jukebox:</b> Java-based music library with search, playlist creation, and queue management. <i>Java, JDBC, MySQL</i>.
+                </li>
+            </ul>
+        </section>
+        <section id="education" class="education">
+            <h2>Education & Certifications</h2>
+            <ul>
+                <li>
+                    <b>PGP in Full Stack Software Engineering</b> – NIIT StackRoute (2022–2023)
+                </li>
+                <li>
+                    <b>Bachelor of Engineering (Civil)</b> – JNNCE, Shivamogga, VTU Belgaum (2018–2022) | 8.02 CGPA
+                </li>
+            </ul>
+        </section>
+        <section id="skills" class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-list">
+                <span class="skill-badge">React.js</span>
+                <span class="skill-badge">Node.js</span>
+                <span class="skill-badge">JavaScript</span>
+                <span class="skill-badge">PostgreSQL</span>
+                <span class="skill-badge">MySQL</span>
+                <span class="skill-badge">AWS</span>
+                <span class="skill-badge">Spring Boot</span>
+                <span class="skill-badge">Angular</span>
+                <span class="skill-badge">Java</span>
+                <span class="skill-badge">HTML/CSS</span>
+                <span class="skill-badge">Git</span>
+                <span class="skill-badge">Postman</span>
+            </div>
+        </section>
+        <div style="text-align:center;">
+            <a class="resume-link" href="Hanamagouda.goudar.resume.pdf" target="_blank"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+        <section id="contact" class="contact-info">
+            <h2>Contact</h2>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:hmgoudar.11@gmail.com">hmgoudar.11@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i> 7676288611</p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/hanamagouda-goudar/" target="_blank">LinkedIn</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/Hanamagouda" target="_blank">GitHub</a></p>
         </section>
     </main>
-
     <footer>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p class="contact-info">
-                <i class="fas fa-user"></i> Name: Hanamagouda Goudar
-            </p>
-            <p class="contact-info">
-                <i class="fas fa-envelope"></i> Email: <a href="mailto:muttugouda108@gmail.com">muttugouda108@gmail.com</a>
-            </p>
-            <p class="contact-info">
-                <i class="fas fa-phone"></i> Phone: 7676288611
-            </p>
-            <p class="contact-info">
-                <i class="fab fa-linkedin"></i> LinkedIn: <a href="https://www.linkedin.com/in/hanamagouda-goudar-a777981ba/" target="_blank">LinkedIn Profile</a>
-            </p>
-            <p class="contact-info">
-                <i class="fab fa-github"></i> GitHub: <a href="https://github.com/Hanamagouda" target="_blank">GitHub Profile</a>
-            </p>
-        </section>
+        <p>&copy; 2025 Hanamagouda Goudar | Full Stack Software Developer</p>
     </footer>
-    <script>
-        // Function to add the 'animated' class after a delay
-        function revealElements() {
-            setTimeout(function () {
-                document.getElementById("name").classList.add("animated");
-                document.getElementById("title").classList.add("animated");
-            }, 2000); // Delay in milliseconds (2 seconds in this example)
-        }
-    
-        // Call the function to trigger the animation
-        window.onload = revealElements;
-    </script>
 </body>
 </html>
